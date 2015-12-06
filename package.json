@@ -1,7 +1,7 @@
 {
   "name": "generator-dwwgrunt",
-  "version": "0.0.0",
-  "description": "A generator for creating a basic web site with Grunt",
+  "version": "0.1.0",
+  "description": "A Yeoman generator for creating a basic web site with Grunt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
     "Sass"
   ],
   "author": "Dennis Burger",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.1",
     "mkdirp": "^0.5.1",

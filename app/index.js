@@ -94,7 +94,7 @@ module.exports = generators.Base.extend({
 		var message = chalk.yellow.bold('Welcome to Dutwebworks Grunt ') + chalk.yellow('A starter kit for a web site with Grunt');
 		this.log(yosay(message, { maxLength: 17 }));
 	},
-	_promting: function() {
+	promting: function() {
 		var done = this.async();
 
 		this.prompt(this._getPrompt(), function(answers){			
@@ -108,7 +108,7 @@ module.exports = generators.Base.extend({
 		this._createProjectFileSystem();
 	},
 	install: function() {
-		// this.bowerInstall();
-		// this.npmInstall();
+		this.bowerInstall();
+		this.npmInstall();
 	},
 });

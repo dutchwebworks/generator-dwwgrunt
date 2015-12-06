@@ -1,3 +1,3 @@
 # <%= appname %>
 
-*By <%= appauthor %>, Amsterdam 2015*
+*By <%= appauthor %>*

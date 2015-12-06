@@ -6,7 +6,7 @@
   "moduleType": [
     "globals"
   ],
-  "license": "Apache",
+  "license": "MIT",
   "homepage": "",
   "private": true,
   "ignore": [

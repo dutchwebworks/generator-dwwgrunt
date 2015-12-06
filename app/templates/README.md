@@ -1,1 +1,3 @@
 # <%= appname %>
+
+*By <%= appauthor %>*

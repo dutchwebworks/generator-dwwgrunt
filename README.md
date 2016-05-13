@@ -19,6 +19,8 @@ Open a **command-line window** (Terminal or MS-DOS) and type the following to gl
 
 	npm install -g yo grunt-cli bower
 
+*On Windows make sure the MS-DOS promt-window is opened with 'Aministrator' privileges.*
+
 ## Linking this Yeoman generator
 
 Once above is installed open a **command-line window** and `cd` into the directory of this `README.md` file. Make sure your **not** in the `app/` sub-directory. Then type the following:

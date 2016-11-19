@@ -1,12 +1,9 @@
 {
   "name": "<%= appname %>",
+  "description": "<%= appdescription %>",
   "author": "<%= appauthor %> <<%= youremail %>>",
   "version": "<%= appversion %>",
   "main": "Gruntfile.js",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-banner": "^0.6.0",

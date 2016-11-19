@@ -24,7 +24,11 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('./package.json'),
-		projectRoot: './httpdocs',
+
+		config: {
+			projectRoot: './httpdocs',
+		},
+
 		meta: {
 			banner: '/*!\n' +
 				' * ' + 'Name: <%= pkg.name %>\n' +
@@ -35,7 +39,6 @@ module.exports = function(grunt) {
 			,
 		},
 
-		// Grunt watch https://www.npmjs.org/package/grunt-contrib-watch
 		watch: {
 			scss: {
 				options: {
@@ -46,7 +49,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt libsass https://www.npmjs.org/package/grunt-sass
 		sass: {
 			dev: {
 				options: {
@@ -76,7 +78,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt contrib cssmin https://www.npmjs.org/package/grunt-contrib-cssmin
 		cssmin: {
 			style: {
 				files: {
@@ -88,7 +89,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt imagemin https://www.npmjs.org/package/grunt-contrib-imagemin
 		imagemin: {
 			dynamic: {
 				options: {
@@ -103,7 +103,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt svgmin https://www.npmjs.org/package/grunt-svgmin
 		svgmin: {
 			options: {
 				plugins: [{
@@ -122,7 +121,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt jshint https://www.npmjs.org/package/grunt-contrib-jshint
 		jshint: {
 			options: {
 				jshintrc: ".jshintrc"
@@ -132,7 +130,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt concat https://www.npmjs.org/package/grunt-contrib-concat
 		concat: {
 			options: {
 				separator: ';'
@@ -147,7 +144,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt uglify https://www.npmjs.org/package/grunt-contrib-uglify
 		uglify: {
 			options: {
 				banner: '<%= meta.banner %>'
@@ -162,7 +158,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Grunt banner https://www.npmjs.com/package/grunt-banner
 		usebanner: {
 			banner: {
 				options: {
@@ -175,7 +170,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		// Grunt browser-sync https://www.npmjs.org/package/grunt-browser-sync
+
 		browserSync: {
 			dev: {
 				options: {
@@ -191,7 +186,7 @@ module.exports = function(grunt) {
 					// Use either the proxy or server setting
 					// proxy: 'grunt-test.local.cassius.nl'
 					server: {
-						baseDir: './'
+						baseDir: '<%= config.projectRoot %>'
 					}
 				},	
 				bsFiles: {

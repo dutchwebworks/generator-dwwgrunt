@@ -1,6 +1,6 @@
 {
   "name": "generator-dwwgrunt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Yeoman generator for creating a basic web site with Grunt",
   "main": "app/index.js",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "bugs": {
     "url": "https://github.com/dutchwebworks/generator-dwwgrunt/issues"
-  }, 
+  },
   "homepage": "https://github.com/dutchwebworks/generator-dwwgrunt",
   "files": [
     "app"

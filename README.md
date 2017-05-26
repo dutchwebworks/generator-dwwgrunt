@@ -1,6 +1,6 @@
 # Dutchwebworks Yeoman Grunt generator
 
-*By Dennis Burger, december 2015*
+*By Dennis Burger, may 2017*
 
 A [Yeoman](http://yeoman.io) generator for creating a basic web site setup with [Grunt](http://gruntjs.com). Yeoman consist of 3 tools: **Yo, Grunt (or Gulp) and Bower**.
 
